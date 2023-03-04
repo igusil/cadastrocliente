@@ -1,0 +1,133 @@
+* {
+  font-family: 'Montserrat' sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /* os inputs e elementos não ultrapasse o valor maximo de largura de seus containers*/
+  color: #333;
+}
+
+html, body {
+  height: auto;  /* vão aumentando conforme os elementos da tela forem aumentando, gereador de senha por exemplo*/
+  min-height: 100vh; /* a altura minima dos elementos é a tela que o usuário tem*/
+}
+
+html {
+  background: linear-gradient(180deg, #ea03ff 0%, #0097ff 100%); /**/
+}
+
+input:focus { /* para quando o usuario selecionar o input não ficar com as bordas pretas*/
+  outline: none;
+}
+
+#register-container {
+  max-width: 900px;   /* largura maxima */
+  min-height: 80vh;   /* altura minima */
+  margin: 2rem auto;
+  display: flex;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+  rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+#register-banner {
+  background: url('../img/bg-form.jpg');
+  background-size: cover; /*preencher com o maximo da imagem na area que temos*/
+  background-position: center; /* centralizar a imagem*/
+  width: 50%; /* largura de 50% nesse container*/
+}
+
+#banner-layer {
+  background-color: rgba(25,11,122,0.7); /* deixar cor mais prox do layout*/
+  height: 100%; /* altura de 100% pra cobrir toda area da foto*/
+  padding: 2rem; /* espaçamento de texto interno*/
+  display: flex;
+  align-items: center; /* centralizar h1 na vertical*/
+}
+
+#register-banner h1 {
+  font-size: 4rem; /*aumentar fonte */
+  margin-bottom: 1.5rem; /* */
+  color: #fff; /* */
+  word-spacing: 50rem; /* aumentar espaçamento de palavras para que jogue a seginda para baixo*/
+}
+
+#register-form {
+  background-color: #fdfdfd;
+  padding: 2rem;
+  width: 50%; /* largura 50%*/
+  display: flex;
+  flex-direction: column; /* alinhar elementos abaixo do outro*/
+}
+
+#register-form h2 {
+  text-align: center;
+  margin-bottom: 1rem; /* para afastar um item do outro*/
+  font-size: 2.2rem;
+}
+#register-form p {
+  text-align: center; /* alinhar texto*/
+  margin-bottom: 1.5rem; /* para afastar um item do outro*/
+  color: #AAA;
+  font-size: 0.8rem; 
+}
+
+.form-control { /* div que encapsula os elementos do formulario */
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column; /*o display padrão das labels é inline, aqui fazemos o mesmo*/
+}
+.form-control label {
+  font-weight: bold; /* fonte em negrito */
+  margin-bottom: 0.6rem; /* fastar dos inputs*/
+}
+
+.form-control input {
+  border: none; /*retirar as bordas*/
+  border-bottom: 1px solid #AAA; /* inserindo borda inferior*/
+  padding: 0.6rem 0; /* 0.6 em cima, embaixo e 0 na lateral */
+}
+
+#generate-password {
+  font-weight: bold; /* fonte negrito*/
+  cursor: pointer;  /*cursor do mouse*/
+  transition: 0.4s; /* Animação para a cor 0099ff ao por o mouse em cima*/
+}
+
+#generate-password:hover {
+  color: #0099ff;
+}
+
+#register-form #generated-password {
+  border: 1px solid #0099ff;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0.4rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+#register-form #generated-password p {
+  color: #81d340;
+  margin-bottom: 0.5rem; 
+}
+
+#register-form input[type="submit"],
+#generate-options button,
+#copy-password {
+  background-color: #81d340;
+  color: #fff;
+  opacity: 0.8;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 1.4rem; /* 1rem superior, inferior e 1.4rem nas laterais */
+  max-width: 150px; /* largura maxima*/
+  cursor: pointer;
+  align-self: flex-end; /* colocar eles na direita*/
+  transition: 0.4s;
+}
+
+#register-form input[type="submit"]:hover {
+  opacity: 1;
+}
