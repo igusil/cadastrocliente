@@ -12,7 +12,7 @@ html, body {
 }
 
 html {
-  background: linear-gradient(180deg, #ea03ff 0%, #0097ff 100%); /**/
+  background: linear-gradient(180deg, #73bbc0fb 0%, #000000 100%); /*180deg, #ea03ff 0%, #0097ff 100%*/
 }
 
 input:focus { /* para quando o usuario selecionar o input não ficar com as bordas pretas*/
@@ -36,7 +36,7 @@ input:focus { /* para quando o usuario selecionar o input não ficar com as bord
 }
 
 #banner-layer {
-  background-color: rgba(25,11,122,0.7); /* deixar cor mais prox do layout*/
+  background-color: rgba(2, 32, 36, 0.719); /* deixar cor mais prox do layout*/ /* rgba(25,11,122,0.7)*/
   height: 100%; /* altura de 100% pra cobrir toda area da foto*/
   padding: 2rem; /* espaçamento de texto interno*/
   display: flex;
